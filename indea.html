@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+		body{
+			font-family: 'Poppins', sans-serif;
+		}
+	</style>
+</head>
+<body>
+  <div class="grid place-items-center h-screen bg-sky-400 ">
+  	<div class="bg-white w-1/3 rounded-lg ">
+          <div class="flex p-5 items-center text-2xl text-sky-400 font-bold border-b-2">
+       <!--  <i class="hidden fas fa-arrow-left back-icon"></i> -->
+        <h1 class="ml-4 font-extrabold">Weather application</h1>
+      </div>
+       <section id="input-section">
+  	  
+        <div class="p-5">
+        <input class="p-3 border-2 rounded-lg text-2xl w-full text-center city-input" type="text" name="" placeholder="Enter your town">
+    <div class="relative flex py-5 items-center">
+      <div class="flex-grow border-2 border-t"></div>
+      <span class="flex-shrink mx-4 text-gray-400 text-xl">or</span>
+      <div class="flex-grow border-2 border-t"></div>
+    </div>
+        <button class="location-input p-3 w-full rounded-lg bg-sky-400 text-white text-3xl text-center font-bold">Your weather</button>
+      </div>
+    </section>
+  		
+  	</div>
+
+  	<section class="hidden bg-white" id="description-section">
+  		<div class="flew-row p-5">
+              <section class="entete">
+          <div class="flex p-5 items-center text-2xl text-sky-400 font-bold border-b-2">
+        <i class="fas fa-arrow-left back-icon hover:cursor-pointer"></i>
+        <h1 class="ml-4 font-extrabold">Weather application</h1>
+      </div>
+            <div class="in d-block py-5 bg-sky-200">
+          <p class="info text-center hidden">&nbsp &nbsp</p>
+        </div>
+      </section>
+  			<div class="w-1/3 mx-4"><img class="weather-icon ml-4" src="images/weather-img3.jfif"></div>
+  			<div class="text-center">
+  				<p class="text-5xl font-extrabold my-3 temp"></p>
+  				<p class="text-2xl text-gray-700 my-2 desc">-</p>
+  				<p class="text-2xl text-gray-700 my-2 city-town">-</p>
+  			</div>
+  		</div>
+
+  		<div class="border-b-2 border-gray-300"></div>
+  		<div class="flex px-4">
+  			<div class="flex justify-center items-center border-r-2 w-1/2 py-3 ">
+  				<i class="text-2xl fas fa-thermometer-half text-sky-400 "></i>
+  				<div class="ml-4 text-left">
+  					<p class="feels-like">-</p>
+  					<p>feels like</p>
+  				</div>
+  			</div>
+  			<div class="flex justify-center items-center border-r-2 w-1/2 py-3 ">
+  				<i class="text-2xl fas fa-tint text-sky-400 "></i>
+  				<div class="ml-4 text-left">
+  					<p class="humidity">-</p>
+  					<p>humidity</p>
+  				</div>
+  			</div>
+  			
+  		</div>
+  	</section>
+  </div> 
+
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
